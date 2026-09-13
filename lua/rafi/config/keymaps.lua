@@ -183,8 +183,7 @@ map('n', '[w', diagnostic_jump(-1, 'WARN'), { desc = 'Prev Warning' })
 -- ===
 
 -- Paste in visual-mode without pushing to register
-map('x', 'p', 'p:let @+=@0<CR>:let @"=@0<CR>', { silent = true, desc = 'Paste' })
-map('x', 'P', 'P:let @+=@0<CR>:let @"=@0<CR>', { silent = true, desc = 'Paste In-place' })
+map('x', 'p', 'P', { silent = true, desc = 'Paste' })
 
 -- Yank buffer's relative path to clipboard
 map('n', '<Leader>y', function()
